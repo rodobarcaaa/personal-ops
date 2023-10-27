@@ -16,7 +16,7 @@ jobs:
       - uses: kielabokkie/ssh-key-and-known-hosts-action@v1.3.5
         with:
           ssh-host: 3.95.254.37
-          ssh-private-key: ${{ http://secrets.GH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.GH_PRIVATE_KEY }}
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
