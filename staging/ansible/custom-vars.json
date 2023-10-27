@@ -2,6 +2,9 @@
   "authorized_keys": [
     {
       "key": "{{ lookup('file', '../ansible/ssh-keys/rodo.pub') }}"
+    },
+    {
+      "key": "{{ lookup('file', '../ansible/ssh-keys/github.pub') }}"
     }
   ]
 }
